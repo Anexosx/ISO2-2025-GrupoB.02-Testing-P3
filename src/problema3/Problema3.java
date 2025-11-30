@@ -3,18 +3,9 @@
 public class Problema3 {
     private static final int aforoPermitido = 100;
 
-    /**
-     * Genera la recomendacion de actividad segun salud, meteo y aforo.
-     * Se usa un flujo lineal de condiciones como en el guion del enunciado.
-     */
-    public String recomendar(boolean plenasFacultades,
-                             boolean sintomasEnfermedades,
-                             double temperatura,
-                             double humedadRelativa,
-                             boolean precipitacionesAgua,
-                             boolean precipitacionesNieve,
-                             boolean nublado,
-                             int aforoActual) {
+    //Genera la recomendacion de actividad segun salud, condiciones meteorológicas y aforo.
+    public String recomendar(boolean plenasFacultades, boolean sintomasEnfermedades, double temperatura, double humedadRelativa, boolean precipitacionesAgua, boolean precipitacionesNieve, boolean nublado, int aforoActual) {
+
         // Estado de salud: si no esta bien, no puede realizar nada
         if (!plenasFacultades || sintomasEnfermedades) {
             return "No puede realizar ninguna actividad";
@@ -41,7 +32,7 @@ public class Problema3 {
             return "No se puede realizar senderismo o escalada por aforo superado";
         }
 
-        // 15 a 25 grados, sin lluvia, sin nubes y humedad <=60% -> catalogo primavera/verano/otono
+        // 15 a 25 grados, sin lluvia, sin nubes y humedad <=60% -> catalogo primavera/verano/otoño
         if (temperatura >= 15 && temperatura <= 25 && !precipitacionesAgua && !nublado && humedadRelativa <= 60) {
             return "Se puede realizar cualquier actividad del catalogo de primavera, verano u otono";
         }
