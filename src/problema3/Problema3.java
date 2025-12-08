@@ -25,7 +25,7 @@ public class Problema3 {
         }
 
         // 0 a 15 grados y sin lluvia -> senderismo/escalada si no supera aforo
-        if (temperatura >= 0 && temperatura <= 15 && !precipitacionesAgua) {
+        if (temperatura >= 0 && temperatura < 15 && !precipitacionesAgua) {
             if (aforoActual <= aforoPermitido) {
                 return "Es posible realizar algunas de las actividades relacionadas con senderismo o escalada";
             }
@@ -33,7 +33,7 @@ public class Problema3 {
         }
 
         // 15 a 25 grados, sin lluvia, sin nubes y humedad <=60% -> catalogo primavera/verano/otoño
-        if (temperatura >= 15 && temperatura <= 25 && !precipitacionesAgua && !nublado && humedadRelativa <= 60) {
+        if (temperatura >= 15 && temperatura < 25 && !precipitacionesAgua && !nublado && humedadRelativa <= 60) {
             return "Se puede realizar cualquier actividad del catalogo de primavera, verano u otono";
         }
 
