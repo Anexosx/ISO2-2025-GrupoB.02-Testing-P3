@@ -1,4 +1,5 @@
-﻿package problema3;
+package problema3;
+
 
 public class Problema3 {
     private static final int aforoPermitido = 100;
