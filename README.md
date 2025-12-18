@@ -2,7 +2,7 @@
 Repositorio del Problema 3 de Testing
 
 # Reparto
-Inés Chamorro Rubio y Héctor García Rubio: : desarrollo de código
+Inés Chamorro Rubio y Héctor García Rubio: desarrollo de código
 
 Ángel de la Osa Díaz Cambronero y Enrique Galiana Fernández-Calvillo: creación de los casos de prueba
 
