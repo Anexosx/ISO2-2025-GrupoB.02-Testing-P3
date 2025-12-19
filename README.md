@@ -9,4 +9,6 @@ Inés Chamorro Rubio y Héctor García Rubio: desarrollo de código
 Blanca Alañón Molina y Raúl Cabello Ávila: implementación de los casos de prueba
 
 
+# Consultar resultados casos de prueba
 
+Los resultados de los casos de prueba se pueden ver en la wiki
